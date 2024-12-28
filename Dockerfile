@@ -1,6 +1,6 @@
 FROM eclipse-temurin:21-jre-alpine
 
-ARG JAR_FILE=build/libs/api-gateway.jar
+ARG JAR_FILE
 
 COPY ${JAR_FILE} /app.jar
 
