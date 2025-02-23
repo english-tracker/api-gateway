@@ -5,14 +5,9 @@ spring:
     gateway:
       routes:
         - id: authorization-service
-          uri: lb://authorization-service
+          uri: http://authorization-service
           predicates:
             - Path=/authorization/**
-    cloud:
-      gateway:
-        discovery:
-          locator:
-            enabled: true
 
 eureka:
   client:
